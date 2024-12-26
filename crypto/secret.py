@@ -1,1 +1,0 @@
-FLAG = b"i-CES{This_is_a_test}"
