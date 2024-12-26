@@ -6,11 +6,11 @@
 // Secret constant number
 #define SECRET_NUMBER 33700
 
+
+
 void sha256_hash(const char *str, char outputBuffer[65]) {
     unsigned char hash[SHA256_DIGEST_LENGTH];
     SHA256_CTX sha256;
-
-    // Initialize, update and finalize hash with new OpenSSL API
     SHA256_Init(&sha256);
     SHA256_Update(&sha256, str, strlen(str));
     SHA256_Final(hash, &sha256);
@@ -49,13 +49,18 @@ int main() {
 
         // Compare hashes
         if (strcmp(input_hash, secret_hash) == 0) {
+            char part1[] = "i-CES{9UE5S3d";
+            char part2[] = "_C0Ns74Nt_H4S";
+            char part3[] = "H3d_NUm63R}";
+        
+            
             char flag[50];
-            snprintf(flag, sizeof(flag), "i-CES{%s}", "9UE5S3d_C0Ns74Nt_H4SH3d_NUm63R");
+            snprintf(flag, sizeof(flag), "%s%s%s", part1,part2,part3);
             printf("Congratulations! You guessed it right. The secret number was %d.\n", SECRET_NUMBER);
             printf("The flag is: %s\n", flag);
             break;
         } else {
-            printf("https://www.youtube.com/watch?v=1k6y1JvaGyE\n");
+            printf("https://www.youtube.com/watch?v=cwd_oXaOuNA\n");
             exit(0);
         }
     }

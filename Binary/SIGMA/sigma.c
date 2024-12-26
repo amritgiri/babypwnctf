@@ -2,7 +2,7 @@
 #include <string.h>
 
 void generate_flag(int user_input) {
-    if (user_input == 42) { // Hidden condition
+    if (user_input == 5362) { // Hidden condition
         // Dynamically construct the flag
         char part1[] = "i-CES{Y0u_";
         char part2[] = "h4vE_6reat_";
@@ -24,18 +24,15 @@ int main() {
     printf("Rate your Sigma mindset from 1 to 10: ");
     scanf("%d", &sigma_rating);
 
-    if (sigma_rating >= 1 && sigma_rating <= 10) {
+    if(sigma_rating == 5362){
+        generate_flag(sigma_rating);
+    }
+    else if (sigma_rating >= 1 && sigma_rating <= 10) {
         printf("\nThank you for rating your Sigma mindset!\n");
         printf("Check out this video: https://www.youtube.com/watch?v=1k6y1JvaGyE\n");
     } else {
         printf("Please choose a number between 1 and 10 next time.\n");
     }
-
-    printf("\nWant to explore further? Enter a number (other than 1 to 10) to see what happens: ");
-    int user_input;
-    scanf("%d", &user_input);
-
-    generate_flag(user_input);
 
     return 0;
 }
