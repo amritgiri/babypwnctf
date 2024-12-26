@@ -1,0 +1,6 @@
+save the web page from the website
+python3 -m http.server
+cewl http://localhost:8000
+Download oneruletorulethemall.rule from github: https://github.com/NotSoSecure/password_cracking_rules/blob/master/OneRuleToRuleThemAll.rule
+time to munge the file from github: https://github.com/Th3S3cr3tAg3nt/Munge.git
+use john ./hash --wordlist=munged --rule OneRuleToRuleThemAll.rule --format=crypt

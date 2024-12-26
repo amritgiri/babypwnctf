@@ -1,0 +1,1 @@
+"a1BcD2Ef"->600, "3GhiJkL4"->640, "5MnOpQr6"->680, "7StUvWxY"->753, "Z1a2Bc3D"->570, "4EfGh5iJ"->630, "6kLmNo7P"->670, "8QrstUvW"->772, "X9YZ0abc"->666, "1DefGh2i"->650
