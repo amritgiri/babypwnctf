@@ -1,0 +1,2 @@
+use exiftool to get the password for steghide
+charcode encrypted
