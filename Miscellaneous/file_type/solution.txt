@@ -1,0 +1,4 @@
+exiftool file.pdf
+decode the usercomment
+receive the flag
+i-CES{HidD3N_1n_XMp}
