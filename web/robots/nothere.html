@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nothing to See Here</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f9;
+            color: #333;
+            display: none; /* Hide content until password is validated */
+        }
+        h1 {
+            color: #007BFF;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>This Page Is Meant to Be Ignored</h1>
+    <p>If you've made it this far, here's your gift:</p>
+    <h1 style="font-family: 'Courier New', Courier, monospace;">i-CES{R0B075_FL4G_H3R3}</h1>
+
+    <script>
+        // Set the correct password
+        const correctPassword = "R3m3m8er_r0b3r75_txt"; // Replace with your desired password
+
+        // Function to validate the password
+        const validatePassword = () => {
+            const userPassword = prompt("Please enter the password to access this page:");
+
+            if (userPassword === correctPassword) {
+                document.body.style.display = 'block'; // Show the content
+            } else {
+                alert('Access denied. Incorrect password.');
+            }
+        };
+
+        // Prompt for password validation
+        validatePassword();
+    </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feature-rich Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for styling */
+        .contact {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .contact .container {
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 30px;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact input[type="text"],
+        .contact input[type="email"],
+        .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact textarea {
+            height: 150px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact button:hover {
+            background-color: #45a049;
+        }
+        .features {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .features .container {
+            text-align: center;
+        }
+
+        .features h2 {
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .feature p {
+            color: #666;
+        }
+        .testimonials {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        .testimonials .container {
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            margin-bottom: 30px;
+        }
+
+        .testimonial {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial p {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .testimonial strong {
+            color: #333;
+            font-weight: bold;
+        }   
+        .hero {
+            position: relative;
+        }
+
+        .cta-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .cta-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        #features,
+        #testimonials,
+        #contact {
+            padding: 100px 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .cta-links {
+            display: flex;
+            align-items: center;
+        }
+
+        .cta-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333; /* Background color for the header */
+            color: white; /* Text color for the header */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            display: inline;
+        }
+
+        .cta-links {
+            margin-left: auto; /* Pushes the login and signup links to the right */
+        }
+
+        .cta-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #ff7f50; /* Custom color for the login and signup links */
+        }
+
+        .cta-links a:hover {
+            color: #ffa07a; 
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #333; /* Background color for the header */
+            color: white; /* Text color for the header */
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            display: inline;
+        }
+
+        .cta-links {
+            margin-left: auto; /* Pushes the login and signup links to the right */
+        }
+
+        .cta-links a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #ff7f50; /* Custom color for the login and signup links */
+        }
+
+        .cta-links a:hover {
+            color: #ffa07a; /* Custom color on hover for the login and signup links */
+        }
+
+        #features {
+            margin-top: 50px; /* Increase the gap between "Features" and the title */
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="container">
+        <h1>Homepage</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">TEST</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+        </nav>
+        <div class="cta-links">
+            <a href="login.html">Login</a>
+            <a href="signup.html">Sign Up</a>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- Features Section -->
+<section id="features" class="features">
+    <div class="container">
+        <h2>Features</h2>
+        <div class="feature">
+            <h3>Feature 1</h3>
+            <p>Description of Feature 1...</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 2</h3>
+            <p>Description of Feature 2...</p>
+        </div>
+        <div class="feature">
+            <h3>Feature 3</h3>
+            <p>Description of Feature 3...</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <h2>Testimonials</h2>
+        <div class="testimonial">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit malesuada est, et vestibulum velit fringilla vel."</p>
+            <p><strong>John</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit malesuada est, et vestibulum velit fringilla vel."</p>
+            <p><strong>Cyber Punk</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Feature-rich Homepage. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:   /nothere
+            /B#}#}(ubOb r#b'%Odhd

@@ -1,0 +1,3 @@
+flag{this is flag}
+
+keep the file somewhere and allow the access with blocking normal commands
