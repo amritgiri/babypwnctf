@@ -28,8 +28,10 @@ app.get('/robots.txt', (req, res) => {
 });
 
 app.get('/nothere.html', (req, res) => {
-    res.setHeader('X-Link-to-next', 'ip/secret.php');
-    res.setHeader('X-Next-Challenge', 'allowed_command{mJpRi4NkBdbjtAIqsULI8QkQ0z9T2XsXlLtUQSgRTQsjuIOL2OrFyzljdfNVEvI9ADgaM4EWB1srAvxcFuqMbg==}');
+    res.setHeader('X-Flag', 'i-CES{CH4ll3N63_8y_0xz3r08y73}');
+    res.setHeader('X-content-type-option', '127.0.0.1');
+    res.setHeader('X-Content-Encoding', '64KouIWDAwiqT3fJ3QOSHK05GeEIPlqfD30iLlzJ9zrYXS6mFTxjjhDxGSyofzEpinuQj2apyUr759OUv5tEX0ap0Ck8oUs/F2KfMimJj74=');
+    res.setHeader('Arthur', '0xz3r08y73');
     res.sendFile(path.join(__dirname, 'nothere.html'));
 });
 
